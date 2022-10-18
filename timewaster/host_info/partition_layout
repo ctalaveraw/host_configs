@@ -1,0 +1,23 @@
+NAME        LABEL               PARTLABEL                    PARTUUID
+loop0                                                        
+sda                                                          
+|-sda1      VM_DATA                                          244fb1ff-5b55-3b45-be2c-fb6203da2e57
+`-sda2      /home                                            b70ed099-9606-124d-8301-5fdb40dc5ccb
+sdb                                                          
+|-sdb1      Ventoy              Ventoy                       957dcc2f-a679-2e4a-2542-a9819bcb1608
+| `-ventoy  ARCH_GUI_KDE_202205                              
+`-sdb2      VTOYEFI             VTOYEFI                      aa00f7f2-b401-e34f-0db0-9409ca3721ea
+sdc                                                          
+`-sdc1      PC_TIMEWASTER_BA                                 15f6e0f3-8613-4003-9a14-f76c96a5a851
+nvme1n1                                                      
+|-nvme1n1p1 UEFI                                             cf75f440-9116-44bc-8683-acb1a21e95b7
+|-nvme1n1p2                                                  303d4674-41ee-4e39-9707-324416902adc
+|-nvme1n1p3 /                                                1e3c86e7-e835-fb49-ac4a-a122fa73662b
+|-nvme1n1p4 /var                                             54e94c5a-a2ef-184d-9cc3-ede597c52833
+|-nvme1n1p5 /home/hs                                         a0312717-cd45-7642-a82f-def1d68ec132
+`-nvme1n1p6 /boot                                            25b23c01-f897-c244-8afd-0a7b989e3774
+nvme0n1                                                      
+|-nvme0n1p1 Recovery            Basic data partition         40973606-a158-45a4-90c6-88d4be279408
+|-nvme0n1p2                     EFI system partition         83c72619-48aa-4526-b349-cb3a0c02302d
+|-nvme0n1p3                     Microsoft reserved partition b1aba4b2-a769-4357-8b7f-7d04317735c6
+`-nvme0n1p4                     VM_OS                        93c30c04-062e-4f88-b2ff-906c367b3573
