@@ -4,7 +4,7 @@ echo "Installing updates"
 pacman -Syu --noconfirm
 
 echo "Installing system utilities"
-pacman -Syu --noconfirm htop vim neovim tree wget curl nano
+pacman -Syu --noconfirm vim neovim gedit nano kate htop tree wget curl clamtk xscreensaver spectacle
 
 echo "Installing ZSH"
 pacman -Sy --noconfirm zsh
@@ -13,10 +13,10 @@ echo "Installing Oh My ZSH"
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 echo "Installing development tools"
-pacman -Sy --noconfirm git ansible terraform
+pacman -Sy --noconfirm git ansible terraform packer vagrant kubeadm kubectl kubelet
 
 echo "Installing custom apps"
-pacman -Sy --noconfirm firefox chromium vlc transmission-qt discord
+pacman -Sy --noconfirm firefox chromium vlc transmission-qt discord gimp
 
 echo "Installing Linux gaming libraries"
 pacman -Sy --noconfirm wine giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse libgpg-error lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader
