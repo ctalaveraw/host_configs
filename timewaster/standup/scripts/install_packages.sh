@@ -6,6 +6,12 @@ sudo pacman -Syu --noconfirm
 echo "Installing system apps"
 sudo pacman -Sy --noconfirm gedit kate clamtk xscreensaver spectacle conky
 
+echo "Installing Network Manager"
+sudo pacman -Sy --noconfirm networkmanager
+
+echo "Enable Network Manager"
+sudo systemctl enable NetworkManager.service
+
 echo "Installing system utilities"
 sudo pacman -Sy --noconfirm p7zip p7zip-plugins unrar tar rsync wget curl tree htop vim neovim nano neofetch reflector
 
