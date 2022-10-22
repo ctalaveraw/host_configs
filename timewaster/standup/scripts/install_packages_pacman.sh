@@ -4,7 +4,9 @@ echo -e "\n Installing updates... \n"
 sudo pacman -Syu --noconfirm
 
 echo -e "\n Installing system utilities... \n"
-sudo pacman -Sy --noconfirm p7zip p7zip-plugins unrar tar rsync wget openssh curl tree htop vim neovim nano neofetch
+sudo pacman -Sy --noconfirm p7zip p7zip-plugins unrar \
+tar rsync wget openssh curl tree htop vim neovim \
+nano neofetch ntfs-3g
 
 echo -e "\n Installing system apps... \n"
 sudo pacman -Sy --noconfirm gedit kate clamtk xscreensaver spectacle conky
