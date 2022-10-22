@@ -12,3 +12,9 @@ sudo pacman -Sy --noconfirm sddm
 echo "Enabling SSDM"
 sudo systemctl enable sddm.service
 
+echo "Installing Network Manager"
+sudo pacman -Sy --noconfirm networkmanager
+
+echo "Enable Network Manager"
+sudo systemctl enable NetworkManager.service
+sudo systemctl start NetworkManager.service

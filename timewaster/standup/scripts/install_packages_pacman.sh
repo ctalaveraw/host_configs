@@ -1,28 +1,20 @@
 #!bin/bash
 
+echo "Configuring pacman"
+sudo pacman -Syu --noconfirm
+
 echo "Installing updates"
 sudo pacman -Syu --noconfirm
+
+echo "Setting pacman mirrorlist"
+sudo pacman -Sy --noconfirm  reflector
+sudo reflector --latest 5 --country "United States",Canada --sort rate --save /etc/pacman.d/ mirrorlist --protocol https --download-timeout 15
 
 echo "Installing system apps"
 sudo pacman -Sy --noconfirm gedit kate clamtk xscreensaver spectacle conky
 
-echo "Installing Network Manager"
-sudo pacman -Sy --noconfirm networkmanager
-
-echo "Enable Network Manager"
-sudo systemctl enable NetworkManager.service
-
 echo "Installing system utilities"
-sudo pacman -Sy --noconfirm p7zip p7zip-plugins unrar tar rsync wget curl tree htop vim neovim nano neofetch reflector
-
-echo "Setting pacman mirrorlist"
-sudo reflector --latest 5 --country "United States",Canada --sort rate --save /etc/pacman.d/ mirrorlist --protocol https --download-timeout 15
-
-echo "Installing ZSH"
-sudo pacman -Sy --noconfirm zsh
-
-echo "Installing Oh My ZSH"
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+sudo pacman -Sy --noconfirm p7zip p7zip-plugins unrar tar rsync wget curl tree htop vim neovim nano neofetch
 
 echo "Installing development tools"
 sudo pacman -Sy --noconfirm git ansible terraform packer vagrant kubeadm kubectl kubelet
