@@ -1,6 +1,6 @@
 #!bin/bash
 
-echo "Install `paru`"
+echo -e "\n Install 'paru' \n"
 cd ~
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
@@ -8,6 +8,6 @@ cd paru
 makepkg -si
 cd ~
 
-echo "Running cleanup"
+echo -e "\n Running cleanup \n"
 cd ~
 rm -rfv ./paru/

@@ -1,7 +1,7 @@
 #!bin/bash
 
-echo "Installing ZSH"
+echo -e "\n Installing ZSH \n"
 sudo pacman -Sy --noconfirm zsh
 
-echo "Installing Oh My ZSH"
+echo -e "\n Installing Oh My ZSH \n"
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"

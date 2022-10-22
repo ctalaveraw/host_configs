@@ -1,20 +1,20 @@
 #!bin/bash
 
-echo "Installing updates"
+echo -e "\n Installing updates \n"
 sudo pacman -Syu --noconfirm
 
-echo "Installing KDE Plasma desktop environment"
+echo -e "\n Installing KDE Plasma desktop environment \n"
 sudo pacman -Sy --noconfirm xorg plasma plasma-wayland-session kde-applications sddm 
 
-echo "Installing SSDM"
+echo -e "\n Installing SSDM \n"
 sudo pacman -Sy --noconfirm sddm 
 
-echo "Enabling SSDM"
+echo -e "\n Enabling SSDM \n"
 sudo systemctl enable sddm.service
 
-echo "Installing Network Manager"
+echo -e "\n Installing Network Manager \n"
 sudo pacman -Sy --noconfirm networkmanager
 
-echo "Enable Network Manager"
+echo -e "\n Enable Network Manager \n"
 sudo systemctl enable NetworkManager.service
 sudo systemctl start NetworkManager.service
