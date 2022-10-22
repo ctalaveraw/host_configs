@@ -4,7 +4,7 @@ echo -e "\n Installing AUR updates... \n"
 paru -Syu --noconfirm
 
 echo -e "\n Installing system utilities... \n"
-paru -Sy --noconfirm ntfs3-dkms
+paru -Sy --noconfirm ntfs3-dkms zfs-linux-zen-git
 
 echo -e "\n Installing development apps... \n"
 paru -Sy --noconfirm powershell visual-studio-code-insiders-bin \
