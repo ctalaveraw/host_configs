@@ -4,7 +4,7 @@ echo -e "\n Installing AUR updates... \n"
 paru -Syu --noconfirm
 
 echo -e "\n Installing system utilities... \n"
-paru -Sy --noconfirm ntfs3-dkms zfs-linux-zen-git
+paru -Sy --noconfirm ntfs3-dkms zfs-linux-zen-git adduser
 
 echo -e "\n Installing system apps... \n"
 paru -Syu --noconfirm 

@@ -10,7 +10,7 @@ echo -e "\n Adding x86_64 repository... \n"
 sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 echo -e "\n Setting pacman mirrorlist... \n"
-sudo pacman -Sy --noconfirm  reflector
+sudo pacman -Sy --noconfirm  reflector pacman-contrib
 sudo reflector --latest 5 --country "United States",Canada --sort rate --save /etc/pacman.d/ mirrorlist --protocol https --download-timeout 15
 
 echo -e "\n Upgrading system... \n"
