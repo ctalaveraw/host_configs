@@ -12,6 +12,9 @@ sudo pacman -Sy --noconfirm qemu virt-manager ovmf dnsmasq ebtables iptables
 echo -e "\n Installing Steam and Lutris... \n"
 sudo paru -Sy --noconfirm lutris steam steam-native-runtime
 
+echo -e "\n Installing RetroArch... \n"
+sudo paru -Sy --noconfirm retroarch retroarch-assets-glui retroarch-assets-ozone retroarch-assets-xmb
+
 echo -e "\n Installing proton... \n"
 echo -e "\n BE SURE TO SELECT THE DESIRED VERSION OF PROTON... \n"
 paru -Sy proton proton-ge-custom-bin
