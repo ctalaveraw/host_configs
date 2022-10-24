@@ -9,7 +9,7 @@ tar rsync wget openssh curl tree htop vim neovim \
 nano neofetch ntfs-3g
 
 echo -e "\n Installing system apps... \n"
-sudo pacman -Sy --noconfirm gedit kate clamtk xscreensaver spectacle conky
+sudo pacman -Sy --noconfirm gedit kate clamtk xscreensaver spectacle conky pavucontrol
 
 echo -e "\n Installing development tools... \n"
 sudo pacman -Sy --noconfirm git ansible terraform packer vagrant kubeadm kubectl kubelet
