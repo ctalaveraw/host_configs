@@ -1,6 +1,6 @@
 #!bin/bash
 
-echo -e "\n Install 'paru'... \n"
+echo -e "\n Installing paru... \n"
 cd ~
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
