@@ -7,7 +7,7 @@ echo -e "\n Installing system utilities... \n"
 paru -Sy --noconfirm ntfs3-dkms zfs-linux-zen-git adduser
 
 echo -e "\n Installing development apps... \n"
-paru -Sy --noconfirm powershell visual-studio-code-insiders-bin \
+paru -Sy --noconfirm powershell-bin visual-studio-code-insiders-bin \
 sublime-text-4 sublime-merge ttf-menlo-powerline-git drawio-desktop slack-desktop
 
 echo -e "\n Installing multimedia apps... \n"
