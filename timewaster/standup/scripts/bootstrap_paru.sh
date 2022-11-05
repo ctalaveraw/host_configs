@@ -17,4 +17,4 @@ echo -e "\n Installing gaming hardware configuration apps... \n"
 paru -Sy --noconfirm openrgb-bin piper
 
 echo -e "\n Installing custom apps... \n"
-paru -Sy --noconfirm brave
+paru -Sy --noconfirm brave-bin
