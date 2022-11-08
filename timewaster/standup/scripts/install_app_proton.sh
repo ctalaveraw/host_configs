@@ -17,7 +17,7 @@ sudo paru -Sy --noconfirm retroarch retroarch-assets-glui retroarch-assets-ozone
 
 echo -e "\n Installing proton... \n"
 echo -e "\n BE SURE TO SELECT THE DESIRED VERSION OF PROTON... \n"
-paru -Sy proton proton-ge-custom-bin
+paru -Sy proton proton-ge-custom-bin protonup-qt-bin
 
 echo -e "\n Adding current user to the 'games' group... \n"
 sudo usermod -a -G games $USERNAME
