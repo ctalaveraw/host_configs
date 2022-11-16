@@ -6,6 +6,9 @@ paru -Syu --noconfirm
 echo -e "\n Installing TUI program for paru... \n"
 paru -Sy --noconfirm paruz
 
+echo -e "\n Switching to paru-bin... \n"
+paru -Sy --noconfirm paru-bin
+
 echo -e "\n Installing system utilities... \n"
 paru -Sy --noconfirm ntfs3-dkms zfs-linux-zen-git adduser
 
